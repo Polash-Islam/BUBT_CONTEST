@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUBT Inter-University Collaborative Programming Contest 2025</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+
+
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="img/bubt.png" alt="BUBT Logo" class="navbar-logo">
+                    <span class="navbar-title">BUBT Inter-University Collaborative Programming Contest 2025</span>
+                </a>
+            </div>
+        </div>
+
+        <ul class="navbar-menu desktop-menu">
+            <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZMM7MdE3TmZp0u72goAyZfnOlFb5ZMDDHyMkpJ01L1JLj9Q/viewform?pli=1"
+                    target="_blank" rel="noopener noreferrer">
+                    Registration
+                </a>
+            </li>
+
+            <li><a href="schedule.html">Schedule</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Competition ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="registration.html">Universities</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contest-rules.html">Contest Rules</a></li>
+                    <!-- <li><a href="problemsetters.html">Problemsetters</a></li> -->
+                </ul>
+            </li>
+
+            <li><a href="https://icpc.bubt.edu.bd/" target="_blank">ICPC BUBT</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+        <div class="navbar-right">
+            <!-- <button class="theme-toggle" id="themeToggle">🌙</button> -->
+            <button class="hamburger" id="openMenu">☰</button>
+        </div>
+    </nav>
+
+    <!-- ✅ MOBILE SIDE DRAWER MENU -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-btn" id="closeMenu">×</button>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZMM7MdE3TmZp0u72goAyZfnOlFb5ZMDDHyMkpJ01L1JLj9Q/viewform?pli=1"
+            target="_blank" rel="noopener noreferrer">
+            Registration
+        </a>
+        <a href="schedule.html">Schedule</a>
+
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Competition ▼</button>
+            <div class="mobile-dropdown-menu">
+                <li><a href="registration.html">Universities</a></li>
+                <a href="team.html">Team</a>
+                <a href="contest-rules.html">Contest Rules</a>
+                <!-- <a href="problemsetters.html">Problemsetters</a> -->
+            </div>
+        </div>
+
+        <a href="https://icpc.bubt.edu.bd/" target="_blank">ICPC BUBT</a>
+        <!-- <a href="#contact">Contact</a> -->
+    </div>
+
+    <div id="drawerOverlay" class="drawer-overlay"></div>
+    <!-- schedule.html এ hero section এর জায়গায় এটা add করুন -->
+    <div class="schedule-banner">
+        <div class="schedule-banner-content">
+            <h1>Contest Schedule</h1>
+            <p>Complete Timeline & Venues</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Venues Section -->
+        <div class="section">
+            <h2>🏛️ Venues</h2>
+            <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.8);">
+                Here are the list of important venues for this event:
+            </p>
+
+            <!-- <ul class="venue-list">
+                <li><strong>1. Main Contest Arena:</strong> BUBT Auditorium (Level 4)</li>
+                <li><strong>2. Registration Desk:</strong> Main Lobby, Ground Floor</li>
+                <li><strong>3. Practice Session Room:</strong> Computer Lab 1 & 2 (Level 3)</li>
+                <li><strong>4. Opening & Closing Ceremony:</strong> BUBT Auditorium (Level 4)</li>
+                <li><strong>5. Help Desk:</strong> Room 401, Level 4 (next to Auditorium entrance)</li>
+                <li><strong>6. Meal Distribution:</strong> University Cafeteria (Ground Floor)</li>
+                <li><strong>7. The contest arena:</strong> BUBT Auditorium with 150+ PC stations with high-speed
+                    internet</li>
+                <li><strong>8. Coach room during the contest:</strong> Room 402 Level 4 (next to contest arena)</li>
+                <li><strong>9. Awards ceremony and Banquet venue:</strong> BUBT Convention Hall, Level 5</li>
+                <li><strong>10. For audience participation:</strong> Gallery seating available - live scoreboard viewing
+                </li>
+            </ul> -->
+            <div class="coming-soon">
+                <h1>🚧 Coming Soon 🚧</h1>
+                <p>Venue details will be announced shortly.</p>
+            </div>
+
+            <h3>Notes:</h3>
+            <ul class="notes-list">
+                <li><strong>*BUBT:</strong> Bangladesh University of Business and Technology Campus, Mirpur-2, Dhaka
+                </li>
+            </ul>
+        </div>
+
+        <!-- Timetable Section -->
+        <div class="section" id="schedule">
+            <h2>📅 Contest Schedule</h2>
+            <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8); font-size: 1.1rem;">
+                The BUBT Inter-University Collaborative Programming Contest 2025
+                <strong style="color: #4CAF50;">Saturday, 29 November,
+                    2025</strong>
+            </p>
+            <p style="margin-bottom: 2rem; color: rgba(255, 255, 255, 0.7); font-style: italic;">
+                Complete day schedule breakdown:
+            </p>
+
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Time</th>
+                        <th style="width: 50%;">Event</th>
+                        <th style="width: 30%;">Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">8:00 AM - 9:00 AM</td>
+                        <td class="event-cell">
+                            <strong class="highlight">Welcoming & Breakfast</strong>
+                            <ul>
+                                <li>Participant welcome</li>
+                                <li>kit distribution</li>
+                                <li>Breakfast</li>
+                            </ul>
+
+                        </td>
+                        <td class="venue-cell"><br>Ground Floor</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">9:00 AM - 2:00 PM</td>
+                        <td class="event-cell">
+                            <strong class="highlight">Main Contest Session</strong>
+                            <ul>
+                                <li>Programing Contest</li>
+
+                            </ul>
+                        </td>
+                        <td class="venue-cell">Computer Labs<br>Level 4 & 5</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">11:00 AM - 11:30 AM</td>
+                        <td class="event-cell">
+                            <strong class="highlight">Snacks Distribution</strong>
+                            <ul>
+                                <li>Light snacks and refreshments provided for participants and guests.</li>
+
+                            </ul>
+
+                        </td>
+                        <td class="venue-cell">Computer Labs<br>Level 4 & 5</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">2:00 PM - 3:00 PM</td>
+                        <td class="event-cell">
+                            <strong class="highlight">Lunch Break</strong>
+                            <ul>
+                                <li>Lunch served to all participants, judges, and volunteers.</li>
+
+                            </ul>
+                        </td>
+                        <td class="venue-cell">Computer Labs<br>Level 4 & 5</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">3:00 PM - 5:00 PM</td>
+                        <td class="event-cell">
+                            <strong class="highlight">Closing Ceremony & Prize Distribution</strong>
+                            <ul>
+                                <li>Announcement of winners</li>
+                                <li>Certificate and prize distribution</li>
+                                <li>Group photo session</li>
+                            </ul>
+
+                        </td>
+                        <td class="venue-cell">BUBT Cafeteria<br>Level 9</td>
+                    </tr>
+
+                    <!-- <tr>
+                        <td class="time-cell">6:00 PM</td>
+                        <td class="event-cell">
+                            <strong class="highlight">Wrap-up & Cleanup</strong>
+                            <ul>
+                                <li>Equipment collection</li>
+                                <li>Venue cleanup</li>
+                                <li>Final debrief with organizing team</li>
+                            </ul>
+                             
+                        </td>
+                         <td class="venue-cell">Contest Arena<br>Level 4</td> -->
+                    <!-- </tr> -->
+
+                    <!-- <tr class="contest-row">
+                        <td class="time-cell">12:00 PM - 5:00 PM</td>
+                        <td class="event-cell">
+                            <strong class="highlight">🏆 MAIN CONTEST (5 Hours)</strong>
+                            <ul>
+                                <li>5-hour programming challenge</li>
+                                <li>8-12 algorithmic problems</li>
+                                <li>Live scoreboard (frozen last hour)</li>
+                                <li>No communication allowed</li>
+                            </ul>
+                        </td>
+                        <td class="venue-cell">Contest Arena<br>Level 4</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">5:00 PM - 5:30 PM</td>
+                        <td class="event-cell">
+                            <strong>Scoreboard Reveal</strong><br>
+                            Final standings announcement
+                        </td>
+                        <td class="venue-cell">Contest Arena<br>Level 4</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">5:30 PM - 6:30 PM</td>
+                        <td class="event-cell">
+                            <strong>Problem Discussion Session</strong>
+                            <ul>
+                                <li>Solution approaches</li>
+                                <li>Algorithm techniques</li>
+                                <li>Expert insights</li>
+                            </ul>
+                        </td>
+                        <td class="venue-cell">BUBT Auditorium<br>Level 4</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">6:30 PM - 7:30 PM</td>
+                        <td class="event-cell">
+                            <strong>Award Ceremony</strong>
+                            <ul>
+                                <li>Winners announcement</li>
+                                <li>Trophy distribution</li>
+                                <li>Certificate distribution</li>
+                                <li>Team photography</li>
+                            </ul>
+                        </td>
+                        <td class="venue-cell">BUBT Convention Hall<br>Level 5</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time-cell">7:30 PM - 9:00 PM</td>
+                        <td class="event-cell">
+                            <strong>Closing Ceremony & Dinner</strong>
+                            <ul>
+                                <li>Photo slideshow</li>
+                                <li>Highlights reel</li>
+                                <li>Farewell dinner & networking</li>
+                            </ul>
+                        </td>
+                        <td class="venue-cell">BUBT Convention Hall<br>Level 5</td>
+                    </tr> -->
+                </tbody>
+            </table>
+
+            <!-- <div
+                style="margin-top: 2rem; padding: 1.5rem; background: rgba(76, 175, 80, 0.1); border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <h3 style="color: #4CAF50; margin-bottom: 1rem;">📌 Important Notes:</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.8rem;">✓ All participants must arrive by 8:30 AM</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Lunch will be provided during the contest (staggered breaks)
+                    </li>
+                    <li style="margin-bottom: 0.8rem;">✓ Coaches and audience can view live scoreboard from gallery</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Mobile phones and electronic devices are not allowed in contest
+                        arena</li>
+                    <li>✓ Internet access will be restricted to contest platform only</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <!-- Sponsors Section -->
+        <!-- <div class="sponsors">
+            <h3>🤝 Our Sponsors & Partners</h3>
+            <div class="sponsor-grid">
+                <div class="sponsor-item" style="color: #333; font-weight: bold;">Tech Company A</div>
+                <div class="sponsor-item" style="color: #333; font-weight: bold;">Innovation Hub</div>
+                <div class="sponsor-item" style="color: #333; font-weight: bold;">Code Academy</div>
+                <div class="sponsor-item" style="color: #333; font-weight: bold;">Digital Solutions</div>
+            </div>
+            <p style="margin-top: 2rem; color: rgba(255, 255, 255, 0.7);">Local Sponsors:</p>
+            <p style="margin-top: 0.5rem; color: rgba(255, 255, 255, 0.6);">BUBT CSE Department • Tech Community BD</p>
+        </div> -->
+    </div>
+
+    <footer>
+        © 2025 BUBT Collaboration Programming Contest. All rights reserved.
+    </footer>
+    <script>
+        // ✅ SIDE DRAWER
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+        const drawer = document.getElementById("sideDrawer");
+        const overlay = document.getElementById("drawerOverlay");
+
+        openMenu.addEventListener("click", () => {
+            drawer.classList.add("open");
+            overlay.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            drawer.classList.remove("open");
+            overlay.classList.remove("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            drawer.classList.remove("open");
+            overlay.classList.remove("active");
+        });
+
+        // ✅ MOBILE DROPDOWN
+        document.querySelectorAll(".mobile-dropdown-toggle").forEach(toggle => {
+            toggle.addEventListener("click", () => {
+                toggle.parentElement.classList.toggle("open");
+            });
+        });
+    </script>
+</body>
+
+</html>
+<script>
+    // Theme Toggle Functionality
+    function toggleTheme() {
+        document.body.classList.toggle('light-mode');
+
+        // Save theme preference in localStorage
+        if (document.body.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'light');
+        } else {
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+
+    // Load saved theme on page load
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+        }
+    });
+</script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+        }
+
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    });
+
+    function toggleTheme() {
+        document.body.classList.toggle('light-mode');
+        if (document.body.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'light');
+        } else {
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+</script>
+
+<script>
+    // Scroll effect
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Set active page based on current URL
+    function setActiveMenu() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const menuLinks = document.querySelectorAll('.navbar-menu a');
+
+        menuLinks.forEach(link => {
+            link.classList.remove('active');
+            const linkPage = link.getAttribute('href');
+
+            if (linkPage === currentPage ||
+                (currentPage === 'index.html' && linkPage === 'about.html') ||
+                linkPage.includes(currentPage.replace('.html', ''))) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Demo function to simulate page navigation
+    function setActivePage(page) {
+        const menuLinks = document.querySelectorAll('.navbar-menu a');
+        menuLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-page') === page) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Theme toggle function
+    function toggleTheme() {
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+
+        if (sunIcon.style.display === 'none') {
+            sunIcon.style.display = 'inline';
+            moonIcon.style.display = 'none';
+            document.body.style.background = 'linear-gradient(135deg, #0a1628 0%, #1a2642 50%, #0f3a2e 100%)';
+        } else {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'inline';
+            document.body.style.background = 'linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 50%, #d0d0d0 100%)';
+        }
+    }
+
+    // Initialize active menu on page load
+    window.addEventListener('DOMContentLoaded', setActiveMenu);
+
+</script>
