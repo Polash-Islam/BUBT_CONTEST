@@ -1739,11 +1739,42 @@ footer {
 }
 
 /* ✅ Mobile Dropdown inside Drawer */
-.mobile-dropdown-menu {
+/* .mobile-dropdown-menu {
     display: none;
     flex-direction: column;
     margin-left: 1rem;
+    padding: 10px;
+} */
+.mobile-dropdown-menu {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
+
+.mobile-dropdown-menu a {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* hover effect for links */
+.mobile-dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* show on hover */
+.mobile-dropdown:hover .mobile-dropdown-menu {
+    display: flex;
+}
+
 .mobile-dropdown-toggle {
     background: none;
     border: none;

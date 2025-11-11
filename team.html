@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUBT Inter-University Collaborative Programming Contest 2025</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 🔹 Updating Soon Section */
+        .updating-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            background: radial-gradient(circle at center, #0a0a23, #000);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .updating-section h2 {
+            font-size: 3rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .updating-section p {
+            font-size: 1.2rem;
+            color: #ccc;
+            max-width: 600px;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .updating-section .loader {
+            width: 80px;
+            height: 80px;
+            border: 6px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #00bfff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 30px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+    .updating-section {
+        padding: 40px 15px;
+        min-height:100vh;
+    }
+
+    .updating-section h2 {
+        font-size: 2rem;
+    }
+
+    .updating-section p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .updating-section .loader {
+        width: 60px;
+        height: 60px;
+        border-width: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .updating-section {
+        padding: 30px 10px;
+        min-height: 55vh;
+    }
+
+    .updating-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .updating-section p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .updating-section .loader {
+        width: 50px;
+        height: 50px;
+        border-width: 4px;
+        margin-bottom: 15px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- Transparent Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="img/bubt.png" alt="BUBT Logo" class="navbar-logo">
+                    <span class="navbar-title">BUBT Inter-University Collaborative Programming Contest 2025</span>
+                </a>
+            </div>
+        </div>
+
+        <ul class="navbar-menu desktop-menu">
+            <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZMM7MdE3TmZp0u72goAyZfnOlFb5ZMDDHyMkpJ01L1JLj9Q/viewform?pli=1"
+                    target="_blank" rel="noopener noreferrer">
+                    Registration
+                </a>
+            </li>
+            <li><a href="schedule.html">Schedule</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Competition ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="university.html">Universities</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contest-rules.html">Contest Rules</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://icpc.bubt.edu.bd/" target="_blank">ICPC BUBT</a></li>
+        </ul>
+
+        <div class="navbar-right">
+            <button class="hamburger" id="openMenu">☰</button>
+        </div>
+    </nav>
+
+    <!-- ✅ MOBILE SIDE DRAWER MENU -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-btn" id="closeMenu">×</button>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZMM7MdE3TmZp0u72goAyZfnOlFb5ZMDDHyMkpJ01L1JLj9Q/viewform?pli=1"
+            target="_blank" rel="noopener noreferrer">Registration</a>
+        <a href="schedule.html">Schedule</a>
+
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Competition ▼</button>
+            <div class="mobile-dropdown-menu">
+                <a href="university.html">Universities</a>
+                <a href="team.html">Team</a>
+                <a href="contest-rules.html">Contest Rules</a>
+            </div>
+        </div>
+
+        <a href="https://icpc.bubt.edu.bd/" target="_blank">ICPC BUBT</a>
+    </div>
+
+    <div id="drawerOverlay" class="drawer-overlay"></div>
+
+    <!-- Hero Section -->
+    <!-- <section class="icpc-hero">
+        <div class="hero-overlay">
+            <div class="hero-content-center">
+                <h1 class="hero-title">All Teams</h1>
+                <p class="hero-subtitle">List of all universities participating Teams</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- 🔹 Updating Soon Section -->
+    <section class="updating-section">
+        <div class="loader"></div>
+        <h2>🚧 Updating Soon</h2>
+        <p>
+            This page is currently being updated with the latest team information and contest details.  
+            Please check back soon to see the final content!
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="icpc-footer">
+        <p>© BUBT Competitive Programming Community. All rights reserved.</p>
+        <p>Designed & Built by, <a href="https://www.linkedin.com/in/swe-polash-islam/" target="_blank" style="color:white; text-decoration:none;">© Md POLASH ISLAM</a></p>
+    </footer>
+
+    <!-- Scripts same as before -->
+    <script>
+        // ✅ SIDE DRAWER
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+        const drawer = document.getElementById("sideDrawer");
+        const overlay = document.getElementById("drawerOverlay");
+
+        openMenu.addEventListener("click", () => {
+            drawer.classList.add("open");
+            overlay.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            drawer.classList.remove("open");
+            overlay.classList.remove("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            drawer.classList.remove("open");
+            overlay.classList.remove("active");
+        });
+
+        // ✅ MOBILE DROPDOWN
+        document.querySelectorAll(".mobile-dropdown-toggle").forEach(toggle => {
+            toggle.addEventListener("click", () => {
+                toggle.parentElement.classList.toggle("open");
+            });
+        });
+    </script>
+
+</body>
+</html>
